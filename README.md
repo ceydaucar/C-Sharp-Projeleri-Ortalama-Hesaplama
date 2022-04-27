@@ -5,7 +5,9 @@ Kulanıcıdan alınan derinliğe göre fibonacci serisindeki rakamların ortalam
     using System;
 
     class Program {
+        
         public static void Main (string[] args) {
+        
           Console.WriteLine ("Lütfen fibonacci seri uzunluğunu giriniz: ");
           int len = int.Parse(Console.ReadLine());
 
@@ -15,15 +17,10 @@ Kulanıcıdan alınan derinliğe göre fibonacci serisindeki rakamların ortalam
 
         }
 
-        public static int fibonacci(int x)
-            {
-                if (x <= 2)
-                {
-                    return 1;
-                }
-                else
-                {
-                    return fibonacci(x - 1) + fibonacci(x - 2);
-                }
-            }
+        public static int fibonacci(int x) {
+            if (x <= 2)
+                return 1;
+            else
+                return fibonacci(x - 1) + fibonacci(x - 2);
+        }
     }
